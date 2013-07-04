@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	  <meta name="apple-mobile-web-app-capable" content="yes">
+	  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	  <title></title>
+	  <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+
+	  <!-- Extra Codiqa features -->
+	  <link rel="stylesheet" href="codiqa.ext.css">
+
+	  <!-- jQuery and jQuery Mobile -->
+	  <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
+	  <script src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+	  <!-- Extra Codiqa features -->
+	  <script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"></script>
+	  
+	  <script src="eventos.js"></script>
+	</head>
+	<body>
+		<!-- Home -->
+		<div data-role="page" id="page1">
+			<div data-theme="b" data-role="header">
+				<h3>
+					Salas Innov@TE
+				</h3>
+			</div>
+			<div data-role="content">	
+				<p>
+				A través de este medio podrá realizar la reservación de la <b>sala de juntas de Innov@TE (sala cerrada)</b> y del <b>Innov@TE Commons (sala abierta)</b>. Primeramente, le sugerimos consultar los lineamientos y restricciones de la sala al final de la página para validar si este recurso cumple con las necesidades para su reunión. <i>Estas restricciones se han definido con la intención de brindar un buen servicio y promover un uso justo de la sala.</i>
+				<br><br>
+				Ambas salas cuentan con una pantalla para proyección y bocinas integradas así como sus respectivos cables VGA y audio para poder utilizarlas. Asimismo, próximamente se contará con una solución para proyección inalámbrica nativo para iPad y iPhone, en el caso de PC, se deberá contar con un software especial que el Departamento de Servicios Computacionales podrá instalar en su computadora para hacer uso de esta funcionalidad.
+				</p>
+			</div>
+			<div data-theme="b" data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a href="" data-transition="" data-theme="" data-icon="home">
+								Home
+							</a>
+						</li>
+						<li>
+							<a href="#page2" data-transition="slide" data-theme="" data-icon="">
+								Calendarios
+							</a>
+						</li>
+						<li>
+							<a href="#page3" data-transition="slide" data-theme="" data-icon="">
+								Reservacion
+							</a>
+						</li>
+						<li>
+							<a href="#page4" data-transition="slide" data-theme="" data-icon="">
+								Reglamento
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Calendarios -->
+		<div data-role="page" id="page2">
+			<div data-theme="b" data-role="header">
+				<h3>
+					Salas Innov@TE
+				</h3>
+			</div>
+			<div data-role="content">
+				<ul>
+					<li>
+						<a href="#calendar1" data-transition="slidefade" data-theme="" data-icon="home">
+							Sala Innov@TE
+						</a>
+					</li>
+					<li>
+						<a href="#calendar2" data-transition="fade" data-theme="" data-icon="">
+							Sala Innov@TE Commons
+						</a>
+					</li>
+				<ul>
+			</div>	
+			<div data-theme="b" data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a href="#page1" data-transition="slidefade" data-theme="" data-icon="home">
+								Home
+							</a>
+						</li>
+						<li>
+							<a href="" data-transition="fade" data-theme="" data-icon="">
+								Calendarios
+							</a>
+						</li>
+						<li>
+							<a href="#page3" data-transition="slide" data-theme="" data-icon="">
+								Reservacion
+							</a>
+						</li>
+						<li>
+							<a href="#page4" data-transition="slide" data-theme="" data-icon="">
+								Reglamento
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Reservación -->
+		<div data-role="page" id="page3">
+			<div data-theme="b" data-role="header">
+				<h3>
+					Salas Innov@TE
+				</h3>
+			</div>
+			<script type="text/javascript">var submitted=false;</script>
+				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='#home';}"></iframe>
+				<form action="https://docs.google.com/a/itesm.mx/forms/d/1T1guAxHEVIvnDRDUrHDU8nC2DYDusQcHdU5vaFRxHbo/formResponse" method="post" data-ajax="false" target="hidden_iframe" onsubmit="submitted=true;">					
+					<div data-role="fieldcontain">
+						<!-- Pregunta 1 -->
+						<fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+							<legend>
+								¿Qué sala deseas reservar?
+							</legend>
+							<input id="group_1216890302_1" name="entry.1216890302" value="Sala de juntas Innov@TE (sala cerrada)"
+							type="radio">
+							<label for="group_1216890302_1">
+								Sala de juntas Innov@TE (sala cerrada)
+							</label>
+							<input id="group_1216890302_2" name="entry.1216890302" value="Innov@TE Commons (sala abierta)"
+							type="radio">
+							<label for="group_1216890302_2">
+								Innov@TE Commons (sala abierta)
+							</label>
+						</fieldset>
+						<!-- Pregunta 2 -->
+						<fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+							<legend>
+								Fecha de la reunión
+							</legend>
+							<input id="group_1216890302_1" name="entry.1216890302" value="Sala de juntas Innov@TE (sala cerrada)"
+							type="radio">
+							<label for="group_1216890302_1">
+								Sala de juntas Innov@TE (sala cerrada)
+							</label>
+							<input id="group_1216890302_2" name="entry.1216890302" value="Innov@TE Commons (sala abierta)"
+							type="radio">
+							<label for="group_1216890302_2">
+								Innov@TE Commons (sala abierta)
+							</label>
+						</fieldset>
+					</div>
+				</form>
+			<!-- Footer-->
+			<div data-theme="b" data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a href="#page1" data-transition="slide" data-theme="" data-icon="home">
+								Home
+							</a>
+						</li>
+						<li>
+							<a href="#page2" data-transition="slide" data-theme="" data-icon="">
+								Calendarios
+							</a>
+						</li>
+						<li>
+							<a href="" data-transition="slide" data-theme="" data-icon="">
+								Reservacion
+							</a>
+						</li>
+						<li>
+							<a href="#page4" data-transition="slide" data-theme="" data-icon="">
+								Reglamento
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Reglamento -->
+		<div data-role="page" id="page4">
+			<div data-theme="b" data-role="header">
+				<h3>
+					Salas Innov@TE
+				</h3>
+			</div>
+			<div data-role="content">	
+				<p><b>Compromisos del solicitante:</b>
+				<br><br>
+				<ul>
+					<li>
+						Una vez realizada la reservación de la sala de juntas para su reunión, deberá respetar los horarios para no causar contratiempos con las demás reservaciones de la misma.
+					</li>
+					<li>
+						En caso de que su reunión se cancele o bien, cambie de horario, deberá informarlo oportunamente a Vanessa Castro (mvane@itesm.mx; ext. 6773) con copia a innovate@itesm.mx.
+					</li>
+					<li>
+						Al finalizar su reunión, deberá asegurarse de no dejar artículos o pertenencias personales en la sala. Innov@TE no se hace responsable por objetos olvidados.
+					</li>
+					<li>
+						Asegurarse de dejar la sala ordenada (dejar las sillas su lugar original) al salir.
+					</li>
+					<li>
+						Cualquier otra situación que no esté estipulada en este documento, quedará a reserva de consulta con Vanessa Castro y la administración de Innov@TE para su aprobación.
+					</li>
+				</ul>
+				</p>
+			</div>
+			<div data-theme="b" data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a href="#page1" data-transition="slide" data-theme="" data-icon="home">
+								Home
+							</a>
+						</li>
+						<li>
+							<a href="#page2" data-transition="slide" data-theme="" data-icon="">
+								Calendarios
+							</a>
+						</li>
+						<li>
+							<a href="#page3" data-transition="slide" data-theme="" data-icon="">
+								Reservacion
+							</a>
+						</li>
+						<li>
+							<a href="" data-transition="slide" data-theme="" data-icon="">
+								Reglamento
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Calendarios -->
+		<div data-role="page" id="calendar1">
+			<div data-theme="b" data-role="header">
+				<h3>
+					Salas Innov@TE
+				</h3>
+			</div>			
+			<iframe id="calendar" src="https://www.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showTz=0&amp;mode=AGENDA&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=itesm.mx_2d3835323733323438343634%40resource.calendar.google.com&amp;color=%236B3304&amp;ctz=America%2FMexico_City" style=" border-width:0 " width="" height="" frameborder="0" scrolling="no"></iframe>
+			<div data-theme="b" data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a href="#page1" data-transition="slide" data-theme="" data-icon="home">
+								Home
+							</a>
+						</li>
+						<li>
+							<a href="#page2" data-transition="slide" data-theme="" data-icon="">
+								Calendarios
+							</a>
+						</li>
+						<li>
+							<a href="#page3" data-transition="slide" data-theme="" data-icon="">
+								Reservacion
+							</a>
+						</li>
+						<li>
+							<a href="" data-transition="slide" data-theme="" data-icon="">
+								Reglamento
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+			<!-- Commons -->
+		<div data-role="page" id="calendar2">
+			<div data-theme="b" data-role="header">
+				<h3>
+					Salas Innov@TE
+				</h3>
+			</div>	
+			<iframe id="commons" src="https://www.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showTz=0&amp;mode=AGENDA&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=itesm.mx_37303039363239322d353835%40resource.calendar.google.com&amp;color=%23875509&amp;ctz=America%2FMexico_City" style=" border-width:0 " width="" height="" frameborder="0" scrolling="no"></iframe>
+			<div data-theme="b" data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a href="#page1" data-transition="slide" data-theme="" data-icon="home">
+								Home
+							</a>
+						</li>
+						<li>
+							<a href="#page2" data-transition="slide" data-theme="" data-icon="">
+								Calendarios
+							</a>
+						</li>
+						<li>
+							<a href="#page3" data-transition="slide" data-theme="" data-icon="">
+								Reservacion
+							</a>
+						</li>
+						<li>
+							<a href="" data-transition="slide" data-theme="" data-icon="">
+								Reglamento
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
